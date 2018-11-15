@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/SchedulerReportCustomDraw/Form1.cs) (VB: [Form1.vb](./VB/SchedulerReportCustomDraw/Form1.vb))
+* [Program.cs](./CS/SchedulerReportCustomDraw/Program.cs) (VB: [Program.vb](./VB/SchedulerReportCustomDraw/Program.vb))
+* [XtraSchedulerReport1.cs](./CS/SchedulerReportCustomDraw/XtraSchedulerReport1.cs) (VB: [XtraSchedulerReport1.vb](./VB/SchedulerReportCustomDraw/XtraSchedulerReport1.vb))
+<!-- default file list end -->
 # Scheduler Reporting - custom painting using CustomDraw* events
 
 
