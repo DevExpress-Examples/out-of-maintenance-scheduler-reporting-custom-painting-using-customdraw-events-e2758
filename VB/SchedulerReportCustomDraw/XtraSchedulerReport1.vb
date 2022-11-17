@@ -53,12 +53,14 @@ Namespace SchedulerReportCustomDraw
         End Sub
         #End Region ' #customdrawtimecell
         #Region "#customdrawdayviewtimeruler"
+    Dim arialFont As New Font("Arial", 20, FontStyle.Bold)
+
         Private Sub dayViewTimeRuler1_CustomDrawDayViewTimeRuler(ByVal sender As Object, ByVal e As CustomDrawObjectEventArgs)
             e.Cache.FillRectangle(e.Cache.GetSolidBrush(Color.LightYellow), e.Bounds)
             Using sf As New StringFormat()
                 sf.Alignment = StringAlignment.Center
                 sf.LineAlignment = StringAlignment.Center
-                e.Cache.DrawVString(TimeZoneInfo.Local.DisplayName, e.Cache.GetFont(New Font(Font.FontFamily, 20, FontStyle.Bold), FontStyle.Bold), e.Cache.GetSolidBrush(Color.Gray), e.Bounds, sf, -90)
+                e.Cache.DrawVString(TimeZoneInfo.Local.DisplayName, e.Cache.GetFont(arialFont, FontStyle.Bold), e.Cache.GetSolidBrush(Color.Gray), e.Bounds, sf, -90)
                 e.Handled = True
             End Using
         End Sub
