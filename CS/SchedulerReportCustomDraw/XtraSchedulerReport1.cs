@@ -63,6 +63,7 @@ namespace SchedulerReportCustomDraw
         }
         #endregion #customdrawtimecell
         #region #customdrawdayviewtimeruler
+            Font arialFont = new Font("Arial", 20, FontStyle.Bold);
         private void dayViewTimeRuler1_CustomDrawDayViewTimeRuler(object sender, CustomDrawObjectEventArgs e)
         {
             e.Cache.FillRectangle(e.Cache.GetSolidBrush(Color.LightYellow), e.Bounds);
@@ -71,7 +72,7 @@ namespace SchedulerReportCustomDraw
                 sf.Alignment = StringAlignment.Center;
                 sf.LineAlignment = StringAlignment.Center;
                 e.Cache.DrawVString(TimeZoneInfo.Local.DisplayName,
-                    e.Cache.GetFont(new Font(Font.FontFamily, 20, FontStyle.Bold), FontStyle.Bold),
+                    e.Cache.GetFont(arialFont, FontStyle.Bold),
                     e.Cache.GetSolidBrush(Color.Gray), e.Bounds, sf, -90);
                 e.Handled = true;
             }
